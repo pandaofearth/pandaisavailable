@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line Loding Animation</title>
     <style>
+        /* css reset */
         * {
             margin: 0;
             padding: 0;
         }
-
         body {
             display: flex;
             justify-content: center;
@@ -18,17 +17,15 @@
             min-height: 100vh;
             background: #000;
         }
-
+        /* avgg */
         svg {
             position: absolute;
             width: 400px;
             fill: none;
         }
-
         svg:nth-child(2) {
             filter: blur(40px);
         }
-
         svg path {
             transform: translate(50px, 50%);
             d: path("M0,25 C150,110 150,-60 300,25");
@@ -37,7 +34,7 @@
             stroke-linecap: round;
             animation: animate 2s ease-in-out infinite;
         }
-
+        /* animation */
         @keyframes animate {
             0% {
                 stroke: #ff0092;
@@ -51,15 +48,13 @@
         }
     </style>
 </head>
-
 <body>
+    <!-- html svg -->
     <svg>
         <path></path>
     </svg>
     <svg>
         <path></path>
     </svg>
-
 </body>
-
 </html>
